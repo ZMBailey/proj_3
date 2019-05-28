@@ -6,6 +6,7 @@ try:
     from reprlib import repr
 except ImportError:
     pass
+
     
 def total_size(o, handlers={}, verbose=False):
     """ Returns the approximate memory footprint an object and all of its contents.
@@ -48,3 +49,4 @@ def total_size(o, handlers={}, verbose=False):
         return s
 
     return sizeof(o)
+
