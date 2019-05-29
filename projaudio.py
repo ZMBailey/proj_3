@@ -54,6 +54,8 @@ def chromaplot(y, rate, start_t=0, stop_t=None, play=True, harmonic_input=False)
     
     if harmonic_input is False:
         h, p = librosa.effects.hpss(y[start:stop])
+    else:
+        h = y[start:stop]
         
     C = librosa.feature.chroma_cqt(y=h, sr=rate)
     
