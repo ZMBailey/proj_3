@@ -54,7 +54,7 @@ class SongClassifier():
             ydl.download([songurl])
     
     
-    def fit(self,songurl):
+    def predict(self,songurl):
         '''Retrieves the specified song, compiles the features,
         and runs a prediciton model.
         input: songurl - the url of the song video to be classified.'''
